@@ -9,5 +9,3 @@ jobs:
     steps:
       - name: Checkout code
         uses: action/checkout@v3
-      - name: Run 
-        uses: go run cmd/web/main.go
