@@ -23,12 +23,12 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
-                    connectorRef: <+input>
+                    connectorRef: account.DockerHub
                     repo: forum
                     tags:
                       - latest
                     caching: true
-                  timeout: ""
+                  timeout: 20m
                   type: BuildAndPushDockerRegistry
           platform:
             os: Linux
