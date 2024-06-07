@@ -23,7 +23,7 @@ pipeline:
                   identifier: dockerbuild
                   name: docker_build
                   spec:
-                    connectorRef: account.DockerHub
+                    connectorRef: account.harnessImage
                     repo: forum
                     tags:
                       - latest
