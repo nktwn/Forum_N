@@ -1,11 +1,19 @@
-name: Super-Linter
+name: CI
 
-on: push
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  super-lint:
-    name: Lint code base
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-22.04
+
     steps:
-      - name: Checkout code
-        uses: action/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    # Add additional steps here
