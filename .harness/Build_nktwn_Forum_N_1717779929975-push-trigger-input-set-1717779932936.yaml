@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nktwn_Forum_N_1717779929975-push-trigger-input-set
+  identifier: Build_nktwn_Forum_N_1717779929975pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Forum
+  pipeline:
+    identifier: Build_nktwn_Forum_N_1717779929975
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
